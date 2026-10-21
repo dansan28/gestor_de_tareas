@@ -1,38 +1,33 @@
 # Mainline
 
-Gestor de tareas con estética de GitHub: resumen del día con saludo según la hora, repositorios por área, issues filtrables, tablero kanban y agenda con recordatorios.
+Gestor de tareas minimalista: saludo según la hora, lo importante del día, áreas, tablero y agenda con recordatorios.
 
 Es una sola página estática (`index.html`), sin dependencias ni build.
 
-## Funciones
+## Secciones
 
-- **Resumen**: saludo según la hora y el día, enfoque de hoy, agenda, recordatorios, hito de la semana y gráfica de actividad.
-- **Repositorios**: un repo por área (`servicio-social`, `universidad`, `proyectos`, `personal`) con tareas, tablero y estadísticas propias.
-- **Tareas**: lista tipo issues con filtros `is:open`, `is:closed`, `is:doing`, `repo:universidad`, `label:uni`, `prio:alta`, `due:hoy`, `due:vencidas`, `due:semana`, `due:sin`.
-- **Tablero**: kanban Por hacer / En progreso / Hecha con arrastrar y soltar.
+- **Hoy**: saludo según la hora y el día, tareas vencidas y de hoy, agenda y avance de la semana.
+- **Tareas**: búsqueda, filtro por área y agrupación automática (Vencidas, Hoy, Mañana, Esta semana, Más adelante, Sin fecha).
+- **Tablero**: Pendiente / En curso / Hecha con arrastrar y soltar.
 - **Agenda**: eventos de los próximos 14 días y recordatorios que avisan mientras la página está abierta.
+- **Áreas**: Servicio social, Universidad, Proyectos, Personal o las que crees.
 
-## Captura rápida
+## Agregar rápido
 
 ```
-estudiar faraday +universidad #uni !alta @vie
+Estudiar ley de Faraday @vie !alta +universidad
 ```
 
-| Token | Significado |
-|---|---|
-| `+repo` | repositorio |
-| `#etiqueta` | etiqueta |
-| `!alta` `!media` `!baja` | prioridad |
-| `@hoy` `@mañana` `@vie` `@25/10` `@2026-10-25` | fecha límite |
+Los atajos son opcionales: `@hoy`, `@mañana`, `@vie`, `@25/10` para la fecha; `!alta`, `!media`, `!baja` para la prioridad; `+área` para el área.
 
-## Atajos
+## Atajos de teclado
 
 | Tecla | Acción |
 |---|---|
-| `c` | Nueva tarea |
-| `/` | Buscar y filtrar |
+| `N` | Nueva tarea |
+| `/` | Buscar |
 | `1`–`5` | Cambiar de sección |
-| `Esc` | Cerrar panel |
+| `Esc` | Cerrar |
 
 ## Datos
 
