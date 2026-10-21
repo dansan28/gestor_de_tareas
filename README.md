@@ -1,24 +1,16 @@
 # Mainline
 
-Gestor de tareas minimalista: saludo según la hora, lo importante del día, áreas, tablero y agenda con recordatorios.
+Gestor de tareas en modo oscuro: saludo según la hora, progreso del día, áreas, agenda, metas semanales y modo enfoque.
 
 Es una sola página estática (`index.html`), sin dependencias ni build.
 
 ## Secciones
 
-- **Hoy**: saludo según la hora y el día, tareas vencidas y de hoy, agenda y avance de la semana.
-- **Tareas**: búsqueda, filtro por área y agrupación automática (Vencidas, Hoy, Mañana, Esta semana, Más adelante, Sin fecha).
-- **Tablero**: Pendiente / En curso / Hecha con arrastrar y soltar.
-- **Agenda**: eventos de los próximos 14 días y recordatorios que avisan mientras la página está abierta.
-- **Áreas**: Servicio social, Universidad, Proyectos, Personal o las que crees.
-
-## Agregar rápido
-
-```
-Estudiar ley de Faraday @vie !alta +universidad
-```
-
-Los atajos son opcionales: `@hoy`, `@mañana`, `@vie`, `@25/10` para la fecha; `!alta`, `!media`, `!baja` para la prioridad; `+área` para el área.
+- **Inicio**: tareas de hoy completadas, pendientes, avance contra la meta semanal, racha, tendencia de 2 semanas, áreas, prioridades y agenda del día.
+- **Tareas**: buscador con sugerencias (Vencidas, Prioridad alta, Esta semana…), búsquedas recientes, accesos por área; vista de lista agrupada o tablero.
+- **Agenda**: semana navegable con eventos, recordatorios y tareas con hora.
+- **Métricas**: tareas cerradas por semana, mes o año contra el periodo anterior, meta semanal, actividad diaria y avance por área.
+- **Modo enfoque**: temporizador de 15, 25 o 50 minutos para una tarea.
 
 ## Atajos de teclado
 
@@ -26,7 +18,7 @@ Los atajos son opcionales: `@hoy`, `@mañana`, `@vie`, `@25/10` para la fecha; `
 |---|---|
 | `N` | Nueva tarea |
 | `/` | Buscar |
-| `1`–`5` | Cambiar de sección |
+| `1`–`4` | Cambiar de sección |
 | `Esc` | Cerrar |
 
 ## Datos
